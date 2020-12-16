@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "compodoc": "npx compodoc -p tsconfig.json -s",
-    "serve-compodoc" : "npx compodoc -s tsconfig.json"
+    "serve-compodoc": "npx compodoc -s tsconfig.json"
   },
   "private": true,
   "dependencies": {
@@ -32,6 +32,7 @@
     "ngx-order-pipe": "^2.0.4",
     "popper.js": "^1.16.1",
     "rxjs": "~6.5.4",
+    "serve": "^11.3.2",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
