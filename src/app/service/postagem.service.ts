@@ -14,28 +14,28 @@ export class PostagemService {
     headers: new HttpHeaders().set('Authorization', environment.token)
   }
 
-  getAllPostagens() {
-    return this.http.get('https://blogpessoal-turma11-victor.herokuapp.com/postagens', this.token)
+  getAllpostagem() {
+    return this.http.get('https://blogpessoal-turma11-victor.herokuapp.com/postagem', this.token)
   }
 
   getByIdPostagem(id: number) {
-    return this.http.get(`https://blogpessoal-turma11-victor.herokuapp.com/postagens/${id}`, this.token)
+    return this.http.get(`https://blogpessoal-turma11-victor.herokuapp.com/postagem/${id}`, this.token)
   }
 
   postPostagem(postagem: Postagem) {
-    return this.http.post('https://blogpessoal-turma11-victor.herokuapp.com/postagens', postagem, this.token)
+    return this.http.post('https://blogpessoal-turma11-victor.herokuapp.com/postagem', postagem, this.token)
   }
 
   putPostagem(postagem: Postagem) {
-    return this.http.put('https://blogpessoal-turma11-victor.herokuapp.com/postagens', postagem, this.token)
+    return this.http.put('https://blogpessoal-turma11-victor.herokuapp.com/postagem', postagem, this.token)
   }
 
   deletePostagem(id: number) {
-    return this.http.delete(`https://blogpessoal-turma11-victor.herokuapp.com/postagens/${id}`, this.token)
+    return this.http.delete(`https://blogpessoal-turma11-victor.herokuapp.com/postagem/${id}`, this.token)
   }
 
   getByTituloPostagem(titulo: string) {
-    return this.http.get(`https://blogpessoal-turma11-victor.herokuapp.com/postagens/titulo/${titulo}`, this.token)
+    return this.http.get(`https://blogpessoal-turma11-victor.herokuapp.com/postagem/titulo/${titulo}`, this.token)
   }
 
 
